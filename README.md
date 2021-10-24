@@ -27,4 +27,4 @@ To test the program it is best to make sure the data has run and filled appropri
 This project is under the [NONE](https://opensource.org/licenses/NONE) license.
 
 ## Questions
-If you want to contact me you can reach me at zinanshin.kaoher@gmail.com or [kaohzina](https://github.com/kaohzina).
+If you want to contact me you can reach me at zinanshin.kaoher@gmail.com or checkout my GitHub account at [kaohzina](https://github.com/kaohzina).
