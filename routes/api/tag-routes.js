@@ -51,7 +51,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // create a new tag
   Tag.create({
-    Tag_name: req.body.Tag_name
+    tag_name: req.body.tag_name
   })
   .then(TagData => res.json(TagData))
   .catch(err => {
@@ -62,13 +62,13 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update({
+  Tag.update(req.body, {
     where: {
       id: req.params.id
     },
   })
   .then(TagData => {
-    if (!TagData) {
+    if (!TagData[0]) {
       res.status(404).json({ message: 'No tag found with this id' });
       return;
     }
